@@ -31,7 +31,7 @@ public class Point {
                 addYAxisNeighbor(y - 1, content, neighbors);
             }
             addYAxisNeighbor(y, content, neighbors);
-            //recursive call until faced non-empty value
+            //recursive call until non-empty value
             neighbors.forEach(p -> p.bucketFill(canvas, color));
         }
 
